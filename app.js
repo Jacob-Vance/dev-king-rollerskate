@@ -2,14 +2,10 @@ require('dotenv').config()
 const express = require('express')
 const app = express()
 const { MongoClient, ServerApiVersion } = require('mongodb'); 
-const uri = process.env.MONGO_URI; 
+const uri = process.env.URI; 
 
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-// const path = require('path')
-// app.use('/static', express.static(path.join(__dirname, 'public')))
-
-
 
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
@@ -43,7 +39,7 @@ app.get('/', function (req, res) {
 app.get('/ejs', async (req, res) => {
  
   await client.connect();
-  let result = await client.db("barrys-db").collection("whatever-collection").find({}).toArray();
+  let result = await client.db("jacob-db").collection("whatever-collection").find({}).toArray(); 
 
   console.log(result);
 
@@ -52,4 +48,4 @@ app.get('/ejs', async (req, res) => {
   });
 });
 
-app.listen(3000)
+app.listen(5000)

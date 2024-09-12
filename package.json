@@ -4,7 +4,7 @@
   "description": "Cumbie 486 Fall 2024 Soup to Nuts Walkthrough",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js", 
+    "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,8 +13,8 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "ejs": "^3.1.10",
-    "express": "^4.19.2",
-    "mongodb": "^6.8.1",
+    "express": "^4.21.0",
+    "mongodb": "^6.9.0",
     "nodemon": "^3.1.4"
   }
 }
