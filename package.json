@@ -1,7 +1,7 @@
 {
-  "name": "potential-eureka-rollerskate",
+  "name": "dev-kingrollerskate",
   "version": "1.0.0",
-  "description": "Cumbie 486 Fall 2024 Soup to Nuts Walkthrough",
+  "description": "CIS-486-01 Fall 2024 dev-king homework",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon app.js",
